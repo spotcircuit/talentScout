@@ -10,8 +10,9 @@ const nextConfig = {
       },
     ],
   },
+  serverExternalPackages: ['mongoose'],
   experimental: {
-    serverComponentsExternalPackages: ['mongoose'],
+    esmExternals: 'loose',
   },
 };
 

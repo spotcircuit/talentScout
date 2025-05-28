@@ -1,0 +1,21 @@
+{
+  "provider": {
+    "openai": {
+      "apiKey": "${OPENAI_API_KEY}"
+    }
+  },
+  "history": {
+    "maxMessages": 100,
+    "maxTokens": 16000
+  },
+  "project": {
+    "name": "TalentScout",
+    "description": "A tool to search for companies that need help recruiting and also a tool to find talent looking for jobs"
+  },
+  "commands": {
+    "dev": "npm run dev",
+    "build": "npm run build",
+    "start": "npm start"
+  },
+  "ports": [3000]
+}

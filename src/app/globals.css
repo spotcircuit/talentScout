@@ -18,21 +18,16 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background-start-rgb));
 }
 
 @layer components {
   .btn-primary {
-    @apply px-4 py-2 bg-primary-600 text-white rounded-md hover:bg-primary-700 transition-colors;
+    @apply bg-primary-600 text-white rounded-md hover:bg-primary-700 transition-colors;
   }
   
   .btn-secondary {
-    @apply px-4 py-2 bg-white text-primary-600 border border-primary-600 rounded-md hover:bg-primary-50 transition-colors;
+    @apply bg-white text-primary-600 border border-primary-600 rounded-md hover:bg-primary-50 transition-colors;
   }
   
   .card {
@@ -40,6 +35,6 @@ body {
   }
   
   .input {
-    @apply px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent;
+    @apply border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent;
   }
 }
